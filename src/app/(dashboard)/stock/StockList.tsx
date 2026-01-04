@@ -1,16 +1,66 @@
 'use client';
 
 import { stockService } from '@/services/stockService';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card';
+import { Card, CardContent, CardHeader } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
 import { Badge } from '@/components/ui/Badge';
-import { Plus, Search, Edit2, Trash2, Package } from 'lucide-react';
+import { Plus, Search, Edit2, Trash2, Package, ChevronLeft, ChevronRight } from 'lucide-react';
 import { formatCurrency, formatDate, cn } from '@/lib/utils';
 import Link from 'next/link';
 import { useTranslation } from '@/components/providers/LanguageProvider';
+import { useRouter, usePathname } from 'next/navigation';
+import { useState, useEffect } from 'react';
 
-export function StockList({ stocks }: { stocks: any[] }) {
+interface StockListProps {
+    stocks: any[];
+    total: number;
+    page: number;
+    limit: number;
+    query: string;
+}
+
+export function StockList({ stocks, total, page, limit, query }: StockListProps) {
     const { t } = useTranslation();
+    const router = useRouter();
+    const pathname = usePathname();
+    const [searchTerm, setSearchTerm] = useState(query);
+
+    const totalPages = Math.ceil(total / limit);
+
+    useEffect(() => {
+        const timeoutId = setTimeout(() => {
+            const params = new URLSearchParams(window.location.search);
+            if (searchTerm) {
+                params.set('q', searchTerm);
+            } else {
+                params.delete('q');
+            }
+            params.set('page', '1');
+
+            // Only replace if query actually changed (avoid initial mount effect if possible, though React 18 handles strict mode)
+            // But here we rely on searchTerm changing.
+            // Check if current URL q matches new q to avoid loop if parent updates prop.
+            const currentQ = params.get('q') || '';
+            // Actually, the simpler way is just to push.
+            // But we need to be careful not to push on first render if query prop matches searchTerm.
+            // However, searchTerm initializes from query.
+            // Let's just do it.
+            router.replace(`${pathname}?${params.toString()}`);
+        }, 500);
+
+        return () => clearTimeout(timeoutId);
+    }, [searchTerm, router, pathname]);
+
+    // Update local state if prop changes (e.g. navigation by browser back button)
+    useEffect(() => {
+        setSearchTerm(query);
+    }, [query]);
+
+    const handlePageChange = (newPage: number) => {
+        const params = new URLSearchParams(window.location.search);
+        params.set('page', newPage.toString());
+        router.replace(`${pathname}?${params.toString()}`);
+    };
 
     return (
         <Card>
@@ -20,6 +70,8 @@ export function StockList({ stocks }: { stocks: any[] }) {
                     <input
                         type="text"
                         placeholder={t('search_stocks_placeholder')}
+                        value={searchTerm}
+                        onChange={(e) => setSearchTerm(e.target.value)}
                         className="w-full pl-10 pr-4 py-2 bg-slate-50 dark:bg-slate-800 border-none rounded-lg text-sm focus:ring-2 focus:ring-blue-500"
                     />
                 </div>
@@ -89,6 +141,38 @@ export function StockList({ stocks }: { stocks: any[] }) {
                         </tbody>
                     </table>
                 </div>
+
+                {/* Pagination Controls */}
+                {total > 0 && (
+                    <div className="flex items-center justify-between px-6 py-4 border-t border-slate-200 dark:border-slate-800">
+                        <div className="text-sm text-slate-500 dark:text-slate-400">
+                            Toplam <span className="font-medium text-slate-900 dark:text-white">{total}</span> kayıttan <span className="font-medium text-slate-900 dark:text-white">{Math.min((page - 1) * limit + 1, total)}</span> - <span className="font-medium text-slate-900 dark:text-white">{Math.min(page * limit, total)}</span> arası gösteriliyor
+                        </div>
+                        <div className="flex items-center gap-2">
+                            <Button
+                                variant="outline"
+                                size="sm"
+                                onClick={() => handlePageChange(page - 1)}
+                                disabled={page <= 1}
+                                className="h-8 w-8 p-0"
+                            >
+                                <ChevronLeft className="h-4 w-4" />
+                            </Button>
+                            <div className="text-sm font-medium px-2">
+                                {page} / {totalPages}
+                            </div>
+                            <Button
+                                variant="outline"
+                                size="sm"
+                                onClick={() => handlePageChange(page + 1)}
+                                disabled={page >= totalPages}
+                                className="h-8 w-8 p-0"
+                            >
+                                <ChevronRight className="h-4 w-4" />
+                            </Button>
+                        </div>
+                    </div>
+                )}
             </CardContent>
         </Card>
     );

@@ -6,6 +6,10 @@ export class StockService {
         return await stockRepository.getAll();
     }
 
+    async getPaginatedStocks(page: number, limit: number, query?: string) {
+        return await stockRepository.getPaginated(page, limit, query);
+    }
+
     async getStockById(id: string) {
         return await stockRepository.getById(id);
     }
