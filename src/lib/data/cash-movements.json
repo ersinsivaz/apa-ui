@@ -1,0 +1,55 @@
+[
+  {
+    "cashBoxId": "cb-1",
+    "type": "Giriş",
+    "amount": 500,
+    "description": "Elden tahsilat",
+    "date": "2026-01-03",
+    "id": "661a9b13-7f8b-47d3-add7-ec25afd24b20",
+    "createdAt": "2026-01-04T15:30:35.651Z",
+    "updatedAt": "2026-01-04T15:30:35.651Z"
+  },
+  {
+    "cashBoxId": "cb-1",
+    "type": "Çıkış",
+    "amount": 33,
+    "description": "Çıkış Deneme",
+    "date": "2026-01-04",
+    "id": "81535ed5-6d45-4540-b4fe-6e6f74c81c45",
+    "createdAt": "2026-01-04T15:34:23.148Z",
+    "updatedAt": "2026-01-04T15:34:23.148Z"
+  },
+  {
+    "cashBoxId": "cb-1",
+    "type": "Giriş",
+    "amount": 400,
+    "description": "FAT-2026-002 tahsilatı",
+    "date": "2026-01-04",
+    "relatedInvoiceId": "1aefe252-e8f8-49c9-9c8f-af5e7e6d2767",
+    "id": "436bb1a7-ec21-4d78-8bc7-fab5c586b74e",
+    "createdAt": "2026-01-04T16:21:52.802Z",
+    "updatedAt": "2026-01-04T16:21:52.802Z"
+  },
+  {
+    "cashBoxId": "cb-1",
+    "type": "Giriş",
+    "amount": 5000,
+    "description": "FAT-2026-005 tahsilatı (Peşin Ödenen)",
+    "date": "2026-01-04",
+    "relatedInvoiceId": "b7afa4e2-3aa0-47f9-901c-cce1fd1d3f77",
+    "id": "f7e59903-bc4b-4ff0-8426-eee723dc764d",
+    "createdAt": "2026-01-04T18:20:57.396Z",
+    "updatedAt": "2026-01-04T18:20:57.396Z"
+  },
+  {
+    "cashBoxId": "cb-1",
+    "type": "Giriş",
+    "amount": 1236.88,
+    "description": "FAT-2026-005 tahsilatı",
+    "date": "2026-01-04",
+    "relatedInvoiceId": "b7afa4e2-3aa0-47f9-901c-cce1fd1d3f77",
+    "id": "1cadb00f-1f3a-4b96-a337-c81645cf8a9f",
+    "createdAt": "2026-01-04T18:21:17.351Z",
+    "updatedAt": "2026-01-04T18:21:17.351Z"
+  }
+]

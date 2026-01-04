@@ -1,0 +1,313 @@
+[
+  {
+    "invoiceNo": "FAT-2025-010",
+    "type": "Alış",
+    "customerId": "7af271ed-0b30-4ce4-abc2-de490b61f0e2",
+    "customerName": "ATP Yazılım A.Ş.",
+    "date": "2025-10-15",
+    "items": [],
+    "subTotal": 40000,
+    "vatTotal": 8000,
+    "grandTotal": 48000,
+    "paidAmount": 48000,
+    "status": "İptal",
+    "id": "inv-p-1",
+    "createdAt": "2025-10-15T10:00:00Z",
+    "updatedAt": "2026-01-04T17:53:42.592Z"
+  },
+  {
+    "invoiceNo": "FAT-2025-011",
+    "type": "Satış",
+    "customerId": "c1a2b3c4-1",
+    "customerName": "Mehmet Yılmaz",
+    "date": "2025-10-20",
+    "items": [],
+    "subTotal": 65000,
+    "vatTotal": 13000,
+    "grandTotal": 78000,
+    "paidAmount": 78000,
+    "status": "Ödendi",
+    "id": "inv-s-1",
+    "createdAt": "2025-10-20T10:00:00Z",
+    "updatedAt": "2025-10-20T10:00:00Z"
+  },
+  {
+    "invoiceNo": "FAT-2025-012",
+    "type": "Alış",
+    "customerId": "7af271ed-0b30-4ce4-abc2-de490b61f0e2",
+    "customerName": "ATP Yazılım A.Ş.",
+    "date": "2025-11-05",
+    "items": [],
+    "subTotal": 30000,
+    "vatTotal": 6000,
+    "grandTotal": 36000,
+    "paidAmount": 36000,
+    "status": "Ödendi",
+    "id": "inv-p-2",
+    "createdAt": "2025-11-05T10:00:00Z",
+    "updatedAt": "2025-11-05T10:00:00Z"
+  },
+  {
+    "invoiceNo": "FAT-2025-013",
+    "type": "Satış",
+    "customerId": "c1a2b3c4-3",
+    "customerName": "Global Lojistik Ltd.",
+    "date": "2025-11-15",
+    "items": [],
+    "subTotal": 85000,
+    "vatTotal": 17000,
+    "grandTotal": 102000,
+    "paidAmount": 102000,
+    "status": "Ödendi",
+    "id": "inv-s-2",
+    "createdAt": "2025-11-15T10:00:00Z",
+    "updatedAt": "2025-11-15T10:00:00Z"
+  },
+  {
+    "invoiceNo": "FAT-2025-014",
+    "type": "Alış",
+    "customerId": "c1a2b3c4-4",
+    "customerName": "Fatma Şahin",
+    "date": "2025-12-10",
+    "items": [],
+    "subTotal": 55000,
+    "vatTotal": 11000,
+    "grandTotal": 66000,
+    "paidAmount": 66000,
+    "status": "Ödendi",
+    "id": "inv-p-3",
+    "createdAt": "2025-12-10T10:00:00Z",
+    "updatedAt": "2025-12-10T10:00:00Z"
+  },
+  {
+    "invoiceNo": "FAT-2025-015",
+    "type": "Satış",
+    "customerId": "c1a2b3c4-1",
+    "customerName": "Mehmet Yılmaz",
+    "date": "2025-12-25",
+    "items": [],
+    "subTotal": 95000,
+    "vatTotal": 19000,
+    "grandTotal": 114000,
+    "paidAmount": 1000,
+    "status": "Kısmi Ödendi",
+    "id": "inv-s-3",
+    "createdAt": "2025-12-25T10:00:00Z",
+    "updatedAt": "2026-01-04T16:19:10.479Z"
+  },
+  {
+    "invoiceNo": "FAT-2026-001",
+    "type": "Satış",
+    "customerId": "9629ebe3-0bde-4635-bca5-44e59ff34741",
+    "customerName": "ersin Sivaz",
+    "date": "2026-01-04",
+    "items": [
+      {
+        "stockId": "4bdd9a34-9502-40e6-bbbe-f02b88b493e4",
+        "stockName": "AI ile vibe coding danışmanlığı",
+        "quantity": 2,
+        "unitPrice": 4000,
+        "vatRate": 1,
+        "vatTotal": 80,
+        "lineTotal": 8080
+      }
+    ],
+    "subTotal": 8000,
+    "vatTotal": 80,
+    "grandTotal": 8080,
+    "paidAmount": 0,
+    "status": "Açık",
+    "description": "Fatura notunu buraya ekliyorum.",
+    "id": "bae6d0ec-e09f-4354-940f-1ab9b69da5b1",
+    "createdAt": "2026-01-04T14:04:48.930Z",
+    "updatedAt": "2026-01-04T14:04:48.930Z"
+  },
+  {
+    "invoiceNo": "FAT-2026-002",
+    "type": "Satış",
+    "customerId": "c1a2b3c4-19",
+    "customerName": "Sibel Parlak",
+    "date": "2026-01-05",
+    "items": [
+      {
+        "stockId": "ff88f38c-5f08-4dbc-9214-cd48c117b887",
+        "stockName": "Kablosuz Mouse",
+        "quantity": 2,
+        "unitPrice": 500,
+        "vatRate": 20,
+        "vatTotal": 200,
+        "lineTotal": 1200
+      }
+    ],
+    "subTotal": 1000,
+    "vatTotal": 200,
+    "grandTotal": 1200,
+    "paidAmount": 400,
+    "status": "Kısmi Ödendi",
+    "description": "fatura açıklaması",
+    "installments": [
+      {
+        "id": "1rh9t9rpa",
+        "invoiceId": "",
+        "dueDate": "2026-01-04",
+        "amount": 400,
+        "status": "Ödendi",
+        "createdAt": "2026-01-04T16:21:16.029Z",
+        "updatedAt": "2026-01-04T16:21:16.029Z",
+        "paymentId": "ea0e79ca-8b89-4994-8c62-ba81af170154"
+      },
+      {
+        "id": "5sg8d42dz",
+        "invoiceId": "",
+        "dueDate": "2026-02-04",
+        "amount": 400,
+        "status": "Bekliyor",
+        "createdAt": "2026-01-04T16:21:16.029Z",
+        "updatedAt": "2026-01-04T16:21:16.029Z"
+      },
+      {
+        "id": "yaqqmj884",
+        "invoiceId": "",
+        "dueDate": "2026-03-04",
+        "amount": 400,
+        "status": "Bekliyor",
+        "createdAt": "2026-01-04T16:21:16.029Z",
+        "updatedAt": "2026-01-04T16:21:16.029Z"
+      }
+    ],
+    "id": "1aefe252-e8f8-49c9-9c8f-af5e7e6d2767",
+    "createdAt": "2026-01-04T16:21:16.030Z",
+    "updatedAt": "2026-01-04T16:21:52.789Z"
+  },
+  {
+    "invoiceNo": "FAT-2026-003",
+    "type": "Satış",
+    "customerId": "7af271ed-0b30-4ce4-abc2-de490b61f0e2",
+    "customerName": "ATP Yazılım A.Ş.",
+    "date": "2026-01-01",
+    "items": [
+      {
+        "stockId": "4bdd9a34-9502-40e6-bbbe-f02b88b493e4",
+        "stockName": "AI ile vibe coding danışmanlığı",
+        "quantity": 1,
+        "unitPrice": 4000,
+        "vatRate": 1,
+        "vatTotal": 40,
+        "lineTotal": 4040
+      }
+    ],
+    "subTotal": 4000,
+    "vatTotal": 40,
+    "grandTotal": 4040,
+    "paidAmount": 0,
+    "status": "Açık",
+    "description": "code",
+    "installments": [],
+    "id": "d092f7ad-a8dc-4a68-a86d-78256d93d789",
+    "createdAt": "2026-01-04T17:37:09.675Z",
+    "updatedAt": "2026-01-04T17:37:09.675Z"
+  },
+  {
+    "invoiceNo": "FAT-2026-004",
+    "type": "Satış",
+    "customerId": "7af271ed-0b30-4ce4-abc2-de490b61f0e2",
+    "customerName": "ATP Yazılım A.Ş.",
+    "date": "2026-01-01",
+    "items": [
+      {
+        "stockId": "ff88f38c-5f08-4dbc-9214-cd48c117b887",
+        "stockName": "Kablosuz Mouse",
+        "quantity": 1,
+        "unitPrice": 500,
+        "vatRate": 20,
+        "vatTotal": 100,
+        "lineTotal": 600
+      }
+    ],
+    "subTotal": 500,
+    "vatTotal": 100,
+    "grandTotal": 600,
+    "paidAmount": 0,
+    "status": "Açık",
+    "description": "",
+    "installments": [],
+    "id": "08c8afb2-2fb7-4507-acc9-f0d2f0717d05",
+    "createdAt": "2026-01-04T17:37:42.499Z",
+    "updatedAt": "2026-01-04T17:37:42.499Z"
+  },
+  {
+    "invoiceNo": "FAT-2026-005",
+    "type": "Satış",
+    "customerId": "7af271ed-0b30-4ce4-abc2-de490b61f0e2",
+    "customerName": "ATP Yazılım A.Ş.",
+    "date": "2026-01-04",
+    "items": [
+      {
+        "stockId": "ff88f38c-5f08-4dbc-9214-cd48c117b887",
+        "stockName": "Kablosuz Mouse",
+        "quantity": 1,
+        "unitPrice": 500,
+        "vatRate": 20,
+        "vatTotal": 100,
+        "lineTotal": 600
+      },
+      {
+        "stockId": "30eb3309-d094-4582-8a4f-dc802168c998",
+        "stockName": "Ergonomik USB Hub 52",
+        "quantity": 1,
+        "unitPrice": 3700.57,
+        "vatRate": 10,
+        "vatTotal": 370.057,
+        "lineTotal": 4070.6270000000004
+      },
+      {
+        "stockId": "4bdd9a34-9502-40e6-bbbe-f02b88b493e4",
+        "stockName": "AI ile vibe coding danışmanlığı",
+        "quantity": 1,
+        "unitPrice": 4000,
+        "vatRate": 1,
+        "vatTotal": 40,
+        "lineTotal": 4040
+      }
+    ],
+    "subTotal": 8200.57,
+    "vatTotal": 510.057,
+    "grandTotal": 8710.627,
+    "paidAmount": 11236.880000000001,
+    "status": "Ödendi",
+    "description": "Bunun tahsilatını sonra yapacağım",
+    "installments": [
+      {
+        "id": "unxolzkw8",
+        "invoiceId": "",
+        "dueDate": "2026-02-04",
+        "amount": 1236.88,
+        "status": "Ödendi",
+        "createdAt": "2026-01-04T18:19:20.106Z",
+        "updatedAt": "2026-01-04T18:19:20.106Z",
+        "paymentId": "7056d1d2-58ad-4bc0-b4dd-e69018a7ac94"
+      },
+      {
+        "id": "14aq5my91",
+        "invoiceId": "",
+        "dueDate": "2026-03-04",
+        "amount": 1236.88,
+        "status": "Bekliyor",
+        "createdAt": "2026-01-04T18:19:20.106Z",
+        "updatedAt": "2026-01-04T18:19:20.106Z"
+      },
+      {
+        "id": "uj07uogo8",
+        "invoiceId": "",
+        "dueDate": "2026-04-04",
+        "amount": 1236.87,
+        "status": "Bekliyor",
+        "createdAt": "2026-01-04T18:19:20.106Z",
+        "updatedAt": "2026-01-04T18:19:20.106Z"
+      }
+    ],
+    "id": "b7afa4e2-3aa0-47f9-901c-cce1fd1d3f77",
+    "createdAt": "2026-01-04T18:19:20.108Z",
+    "updatedAt": "2026-01-04T18:21:17.333Z"
+  }
+]

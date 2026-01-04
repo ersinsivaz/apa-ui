@@ -1,0 +1,23 @@
+[
+  {
+    "currency": "ABD Doları",
+    "code": "USD",
+    "buying": 34.00909282556058,
+    "selling": 34.20509282556058,
+    "updatedAt": "2026-01-04T17:19:07.720Z"
+  },
+  {
+    "currency": "Euro",
+    "code": "EUR",
+    "buying": 36.99442686365484,
+    "selling": 37.19842686365484,
+    "updatedAt": "2026-01-04T17:19:07.886Z"
+  },
+  {
+    "currency": "İngiliz Sterlini",
+    "code": "GBP",
+    "buying": 43.03974151942822,
+    "selling": 43.46974151942822,
+    "updatedAt": "2026-01-04T17:19:07.955Z"
+  }
+]

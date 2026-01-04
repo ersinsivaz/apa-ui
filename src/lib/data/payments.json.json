@@ -1,0 +1,74 @@
+[
+  {
+    "invoiceId": "inv-s-3",
+    "amount": 1000,
+    "date": "2026-01-04",
+    "paymentMethod": "Banka",
+    "sourceId": "ba-1",
+    "sourceName": "Ticari Hesap",
+    "description": "FAT-2025-015 tahsilatı",
+    "id": "90a0ace4-f760-4529-a5ef-8f4fe471551f",
+    "createdAt": "2026-01-04T16:18:05.484Z",
+    "updatedAt": "2026-01-04T16:18:05.484Z"
+  },
+  {
+    "invoiceId": "inv-s-3",
+    "amount": 1000,
+    "date": "2026-01-04",
+    "paymentMethod": "Banka",
+    "sourceId": "ba-1",
+    "sourceName": "Ticari Hesap",
+    "description": "FAT-2025-015 tahsilatı",
+    "id": "c9eaf96b-1e08-45ca-90c2-02c85de17ec3",
+    "createdAt": "2026-01-04T16:18:37.249Z",
+    "updatedAt": "2026-01-04T16:18:37.249Z"
+  },
+  {
+    "invoiceId": "inv-s-3",
+    "amount": 1000,
+    "date": "2026-01-04",
+    "paymentMethod": "Banka",
+    "sourceId": "ba-1",
+    "sourceName": "Ticari Hesap",
+    "description": "FAT-2025-015 tahsilatı",
+    "id": "052f47f9-ad56-4148-8b25-e5e5cef3ab5f",
+    "createdAt": "2026-01-04T16:19:10.475Z",
+    "updatedAt": "2026-01-04T16:19:10.475Z"
+  },
+  {
+    "invoiceId": "1aefe252-e8f8-49c9-9c8f-af5e7e6d2767",
+    "amount": 400,
+    "date": "2026-01-04",
+    "paymentMethod": "Kasa",
+    "sourceId": "cb-1",
+    "sourceName": "Merkez Kasa",
+    "description": "FAT-2026-002 tahsilatı",
+    "id": "ea0e79ca-8b89-4994-8c62-ba81af170154",
+    "createdAt": "2026-01-04T16:21:52.785Z",
+    "updatedAt": "2026-01-04T16:21:52.785Z"
+  },
+  {
+    "invoiceId": "b7afa4e2-3aa0-47f9-901c-cce1fd1d3f77",
+    "amount": 5000,
+    "date": "2026-01-04",
+    "paymentMethod": "Kasa",
+    "sourceId": "cb-1",
+    "sourceName": "Merkez Kasa",
+    "description": "FAT-2026-005 tahsilatı (Peşin Ödenen)",
+    "id": "46992655-9a64-45ef-b669-9bd51e02382b",
+    "createdAt": "2026-01-04T18:20:57.371Z",
+    "updatedAt": "2026-01-04T18:20:57.371Z"
+  },
+  {
+    "invoiceId": "b7afa4e2-3aa0-47f9-901c-cce1fd1d3f77",
+    "amount": 1236.88,
+    "date": "2026-01-04",
+    "paymentMethod": "Kasa",
+    "sourceId": "cb-1",
+    "sourceName": "Merkez Kasa",
+    "description": "FAT-2026-005 tahsilatı",
+    "id": "7056d1d2-58ad-4bc0-b4dd-e69018a7ac94",
+    "createdAt": "2026-01-04T18:21:17.328Z",
+    "updatedAt": "2026-01-04T18:21:17.328Z"
+  }
+]

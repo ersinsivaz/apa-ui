@@ -1,0 +1,32 @@
+[
+  {
+    "id": "cb-1",
+    "name": "Merkez Kasa",
+    "code": "K001",
+    "currency": "TRY",
+    "balance": 7103.88,
+    "isActive": true,
+    "createdAt": "2026-01-04T18:00:00.000Z",
+    "updatedAt": "2026-01-04T18:21:17.356Z"
+  },
+  {
+    "id": "cb-2",
+    "name": "Dolar Kasası",
+    "code": "K002",
+    "currency": "USD",
+    "balance": 1200,
+    "isActive": true,
+    "createdAt": "2026-01-04T18:00:00.000Z",
+    "updatedAt": "2026-01-04T18:00:00.000Z"
+  },
+  {
+    "name": "Euro Kasa",
+    "code": "K002",
+    "currency": "EUR",
+    "balance": 4,
+    "isActive": true,
+    "id": "6221af3c-f4bf-4899-8587-849ae847a0e3",
+    "createdAt": "2026-01-04T15:23:43.837Z",
+    "updatedAt": "2026-01-04T15:23:43.837Z"
+  }
+]

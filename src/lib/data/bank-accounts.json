@@ -1,0 +1,26 @@
+[
+  {
+    "id": "ba-1",
+    "bankName": "Ziraat Bankası",
+    "accountName": "Ticari Hesap",
+    "accountNumber": "1234-56789",
+    "iban": "TR12 3456 7890 1234 5678 9012 34",
+    "currency": "TRY",
+    "balance": 146000,
+    "isActive": true,
+    "createdAt": "2026-01-04T18:00:00.000Z",
+    "updatedAt": "2026-01-04T16:19:10.489Z"
+  },
+  {
+    "id": "ba-2",
+    "bankName": "Garanti BBVA",
+    "accountName": "Dolar Hesabı",
+    "accountNumber": "9876-54321",
+    "iban": "TR98 7654 3210 9876 5432 1098 76",
+    "currency": "USD",
+    "balance": 12500,
+    "isActive": true,
+    "createdAt": "2026-01-04T18:00:00.000Z",
+    "updatedAt": "2026-01-04T18:00:00.000Z"
+  }
+]

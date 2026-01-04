@@ -1,0 +1,16 @@
+[
+  {
+    "id": "user-1",
+    "username": "admin",
+    "name": "Ersin SİVAZ",
+    "email": "ersinsivaz@gmail.com",
+    "settings": {
+      "layout": "sidebar",
+      "theme": "system",
+      "accentColor": "orange",
+      "language": "tr"
+    },
+    "createdAt": "2026-01-04T17:40:00.000Z",
+    "updatedAt": "2026-01-04T17:56:14.961Z"
+  }
+]
