@@ -54,4 +54,26 @@ export abstract class BaseRepository<T extends Entity> {
         await writeJson(this.filename, filteredItems);
         return true;
     }
+    async getPaginated(page: number, limit: number, query?: string): Promise<{ data: T[], total: number }> {
+        const items = await this.getAll();
+
+        // Filter first if query exists
+        let filteredItems = items;
+        if (query) {
+            const q = query.toLowerCase();
+            filteredItems = items.filter(item =>
+                ((item as any).name && String((item as any).name).toLowerCase().includes(q)) ||
+                ((item as any).code && String((item as any).code).toLowerCase().includes(q))
+            );
+        }
+
+        const startIndex = (page - 1) * limit;
+        const endIndex = startIndex + limit;
+        const slicedItems = filteredItems.slice(startIndex, endIndex);
+
+        return {
+            data: slicedItems,
+            total: filteredItems.length
+        };
+    }
 }
