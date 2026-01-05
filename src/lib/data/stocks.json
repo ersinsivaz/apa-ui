@@ -114,10 +114,10 @@
     "unit": "Adet",
     "vatRate": 20,
     "salePrice": 1997.07,
-    "stockQuantity": 238,
+    "stockQuantity": 237,
     "id": "d8203212-0f0d-4f8e-9423-bf1591c251a9",
     "createdAt": "2026-01-04T18:02:31.695Z",
-    "updatedAt": "2026-01-04T18:02:31.695Z"
+    "updatedAt": "2026-01-05T18:55:52.178Z"
   },
   {
     "code": "STK-32055",

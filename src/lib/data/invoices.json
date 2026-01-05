@@ -309,5 +309,52 @@
     "id": "b7afa4e2-3aa0-47f9-901c-cce1fd1d3f77",
     "createdAt": "2026-01-04T18:19:20.108Z",
     "updatedAt": "2026-01-04T18:21:17.333Z"
+  },
+  {
+    "invoiceNo": "FAT-2026-006",
+    "type": "Satış",
+    "customerId": "c1a2b3c4-3",
+    "customerName": "Global Lojistik Ltd.",
+    "date": "2026-01-05",
+    "items": [
+      {
+        "stockId": "d8203212-0f0d-4f8e-9423-bf1591c251a9",
+        "stockName": "Profesyonel Klavye 42",
+        "quantity": 1,
+        "unitPrice": 1997.07,
+        "vatRate": 20,
+        "vatTotal": 399.414,
+        "lineTotal": 2396.484
+      },
+      {
+        "stockId": "27df0da3-f9ec-4703-ab53-4710a6685ad7",
+        "stockName": "Danışmanlık Hizmeti",
+        "quantity": 1,
+        "unitPrice": 5666,
+        "vatRate": 20,
+        "vatTotal": 1133.2,
+        "lineTotal": 6799.2
+      }
+    ],
+    "subTotal": 7663.07,
+    "vatTotal": 1532.614,
+    "grandTotal": 9195.684,
+    "paidAmount": 5555,
+    "status": "Açık",
+    "description": "",
+    "installments": [
+      {
+        "id": "3vx6aacej",
+        "invoiceId": "",
+        "dueDate": "2026-02-05",
+        "amount": 3640.68,
+        "status": "Bekliyor",
+        "createdAt": "2026-01-05T18:55:52.218Z",
+        "updatedAt": "2026-01-05T18:55:52.218Z"
+      }
+    ],
+    "id": "369b1691-73cb-4345-ba8b-2099a4e37e5f",
+    "createdAt": "2026-01-05T18:55:52.222Z",
+    "updatedAt": "2026-01-05T18:55:52.222Z"
   }
 ]
